@@ -1,0 +1,146 @@
+/* Documento */
+/*
+
+selector {
+    propiedad: valor;
+}
+
+*/
+
+/* Selector Universal */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Selector de ID */
+
+#titulo-principal {
+    color: blue;
+    font-size: 50px;
+}
+
+/* Selector de Clase */
+
+.mensaje {
+    width: 400px;
+    height: 100px;
+    background-color: #467467; /* hexadecimal */ /* rgb(0, 0, 0) */
+    color: white;
+    padding: 20px 40px 20px;
+}
+
+/* Selector de Elemento */
+
+p {
+    margin: 20px;
+    color: grey;
+}
+
+/* Selector Descendiente */
+/* .mensaje span{
+    color: burlywood;
+    display: block;
+} */
+
+/* Selector Adyacente */
+
+/* h2 + .texto {
+    color: red;
+    width: 100%;
+    height: 30px;
+} */
+
+/* Selector hijo */
+
+.mensaje > span{
+    color: burlywood;
+    display: block;
+}
+
+.mensaje > .subtexto > span{
+    color: burlywood;
+    display: block;
+}
+
+/* Selector hermano */
+h2 ~ .texto {
+    color: red;
+    width: 100%;
+    height: 30px;
+}
+
+/* Selector Atributo */
+input[type] { /* Que tenga el atributo type */
+    display: block;
+    color: red;
+}
+
+input[type=text] { /* Que tenga el atributo type con el valor text */
+    display: block;
+    color: red;
+}
+
+
+input[class*="input"] { /* Que tenga el valor en cualquier parte del atributo class */
+    display: block;
+    color: green;
+}
+
+
+a[href^="http"] { /* Que valor del atributo comience con ese valor */
+    display: block;
+    color: green;
+}
+
+a[href$=".html"] { /* Que valor del atributo termine con ese valor */
+    display: block;
+    color: pink;
+}
+
+ul#submenu li[class~="class2"] { /* Que valor del atributo termine con ese valor */
+    display: block;
+    color: pink;
+}
+
+
+/* Selector Combinatorio */
+
+h1, h2, h3 {
+    color: brown;
+}
+
+.class1, .class2, .class3, .class4 {
+    color: blue;
+}
+
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #00f;
+    overflow: hidden;
+}
+
+.box .box1 {
+    width: 50%;
+    height: 50px;
+    background-color: #534;
+    float: left;
+    overflow: hidden;
+}
+
+.box .box2 {
+    width: 50%;
+    height: 50px;
+    background-color: #284;
+    float: right;
+}
+
+.box .box3 {
+    width: 100%;
+    height: 50px;
+    float: left;
+    background-color: #fff;
+}
