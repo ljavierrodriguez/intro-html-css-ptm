@@ -88,6 +88,18 @@ input[class*="input"] { /* Que tenga el valor en cualquier parte del atributo cl
     color: green;
 }
 
+input[class*="input"]:enabled { /* Que tenga el valor en cualquier parte del atributo class */
+    background-color: yellow;
+}
+
+input[class*="input"]:focus { /* Que tenga el valor en cualquier parte del atributo class */
+    background-color: gray;
+}
+
+input::placeholder {
+    color: red;
+}
+
 
 a[href^="http"] { /* Que valor del atributo comience con ese valor */
     display: block;
@@ -143,4 +155,46 @@ h1, h2, h3 {
     height: 50px;
     float: left;
     background-color: #fff;
+}
+
+/* Pseudo Class Selectores // Selectores Pseudo Clases */
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: yellow;
+}
+
+a:hover {
+    color: green;
+}
+h1:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.box:hover {
+    background-color: red;
+}
+
+
+input[class*="input"]:focus { /* Que tenga el valor en cualquier parte del atributo class */
+    background-color: gray;
+}
+
+.fa-html5 {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,207cca+51,7db9e8+100;Blue+Gloss+Default */
+    background: #1e5799; /* Old browsers */
+    background: -moz-linear-gradient(top,  #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+    color: rgba(100, 232, 345, 0.3);
+    padding: 10px;
+}
+
+.fa-html5:hover {
+    color: black;
 }
